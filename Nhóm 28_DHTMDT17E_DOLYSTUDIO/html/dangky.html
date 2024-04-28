@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/home.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="../js/dangky.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row navbar" style="background-color: black;">
+            <div class="col-3 pl-5">
+                <a href="../html/home.html"><img class="img-responsive rounded" src="../image/logo.jpg" alt=""></a>
+                <span style="color: white;" class="border-left small p-2 pr-2">Doly Studio</span>
+            </div>
+
+            <div class="col-5">
+                <div class="bg-white rounded shadow">
+                    <form action="">
+                        <div class="bg-light rounded-pill shadow-sm">
+                            <div class="input-group">
+                                <input type="search" placeholder="..." aria-describedby="button-addon1" class="form-control border-0 bg-light">
+                                <div class="input-group-append">
+                                    <button id="button-addon1" type="submit" class="btn btn-link text-dark"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+
+            <div class="col-4">
+                <ul class="nav justify-content-center float-right">
+                    <li class="nav-fill">
+                        <a class="nav-link small fa fa-shopping-cart border-right pt-3 pl-5" href="../html/giohang.html"></a>
+                    </li>
+                    
+                    <li class="nav-fill">
+                        <a class="nav-link small fa fa-user pt-3" href="../html/gioithieu.html"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row" style="background-color: #F1F1F1;">
+            <div class="col-12 p-2">
+                <ul class="nav justify-content-center anav1">
+                    <li class="nav-item mr-3"><a class="nav-link small" href="../html/home.html">Trang chủ</a></li>
+                    <li class="nav-item mr-3"><a class="nav-link small" href="../html/gioithieu.html">Giới thiệu</a></li>
+                    <li class="nav-item mr-3"><a class="nav-link small" href="../html/dichvu.html">Dịch vụ</a></li>
+                    <li class="nav-item mr-3"><a class="nav-link small" href="../html/tintuc.html">Tin tức</a></li>
+                    <li class="nav-item mr-3"><a class="nav-link small" href="../html/lienhe.html">Liên hệ</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="border border-dark mt-5">
+            <form action="" class="ml-5 mr-5">
+            <h3 class="text-center pt-4"><strong>ĐĂNG KÝ TÀI KHOẢN</strong></h3>
+            <i class="text-danger pl-3">Vui lòng nhập đầy đủ thông tin để đăng ký tài khoản</i>
+            <hr>
+
+            <div class="form-group">
+                <label class="col-sm-5" for="txtdn">Tên đăng nhập:</label>
+                <div class="col-md-12">
+                     <input class="form-control" type="text" name="" id="txtdn" placeholder="Nhập tên đăng nhập">
+                     <span id="errorDN" class="text-danger">*</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-5" for="txtsdt">Số điện thoại:</label>
+                <div class="col-md-12">
+                     <input class="form-control" type="tel" name="" id="txtsdt" placeholder="Nhập số điện thoại">
+                     <span id="errorsdt" class="text-danger">*</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-5" for="txtemail">Email:</label>
+                <div class="col-md-12">
+                     <input class="form-control" type="email" name="" id="txtemail" placeholder="Nhập địa chỉ Email">
+                     <span id="erroremail" class="text-danger">*</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-5" for="txtmk">Mật khẩu:</label>
+                <div class="col-md-12">
+                     <input class="form-control" type="password" name="" id="txtmk" placeholder="Nhập mật khẩu">
+                     <span id="errormk" class="text-danger">*</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-5" for="txtnlmk">Nhập lại mật khẩu:</label>
+                <div class="col-md-12">
+                     <input class="form-control" type="password" name="" id="txtnlmk" placeholder="Nhập lại mật khẩu">
+                     <span id="errorlai" class="text-danger">*</span>
+                </div>
+            </div>
+            </form>
+        </div>
+        
+        <div class="form-group">
+            <button type="submit" class="btn btn-dark mt-4" style="border-radius: 50px; width: 150px; margin-left: 480px;" onclick="dangkytk()">Đăng ký</button>
+        </div>
+        <div class="text-center">Bạn đã có tài khoản? <a class="text-danger" href="../html/dangnhap.html">Đăng nhập tại đây!</a></div>
+
+        
+        <div class="col-md-12 pt-5 text-center">
+            <a href="../html/home.html"><button type="button" class="btn btn-danger">Quay lại trang chủ</button></a>
+        </div>
+
+        <div class="row bg-dark mt-5">
+            <div class="col-3 text-white">
+                <a href="../html/home.html"><img style="margin-left: 95px;" class="img-responsive rounded mt-5" src="../image/logo.jpg" alt=""></a>
+                <p style="font-size: smaller; margin: 20px; text-align: center;">Chụp ảnh - Ghi lại khoảnh khắc đẹp trong cuộc sống của bạn!</p>
+            </div>
+
+            <div class="col-6 pt-3">
+                <table class="table table-borderless text-white">
+                    <thead>
+                        <tr>
+                            <th>Dịch Vụ</th>
+                            <th>Hỗ trợ & Liên hệ</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-hover text-danger">
+                        <tr>
+                            <td class="text-white-50">Chụp ảnh chân dung</td>
+                            <td class="text-white-50"><span class="fa fa-phone"> +445 87 999 000</span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-white-50">Chụp ảnh cưới</td>
+                            <td class="text-white-50"><span class="fas fa-clock"> Thứ 2 - Thứ 7, 9AM to 11PM</span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-white-50">Chụp ảnh gia đình</td>
+                            <td class="text-white-50"><span class="fa fa-envelope"> doly1930@gmail.com</span></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <div class="col-3 pt-5">
+                <p class="mr-5 text-white text-center">Nếu bạn có câu hỏi, bạn có thể liên lạc với chúng tôi.</p>
+                <div class="text-center mr-5"><input class="text-white btn btn-danger" style="width: 120px;" type="submit" onclick="goingay()" value="Gọi ngay"></div>
+                <div class="text-white pl-3">
+                    <ul class="nav mt-4 pl-5">
+                        <li class="nav-item">
+                            <a class="text-white fab fa-facebook-square mr-4" href=""></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white fab fa-instagram mr-4" href=""></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="fab fa-twitter text-white" href=""></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
